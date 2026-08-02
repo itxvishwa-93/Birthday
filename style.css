@@ -716,3 +716,60 @@ height:160px;
         0 0 20px #ff4fa8;
 
 }
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#120018;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    transition:1s;
+
+}
+
+#envelope{
+
+    font-size:90px;
+
+    cursor:pointer;
+
+    animation:beat 1.5s infinite;
+
+}
+
+#intro h2{
+
+    color:white;
+
+    margin-top:20px;
+
+}
+
+#intro p{
+
+    color:#ffd6eb;
+
+    margin-top:10px;
+
+    font-size:20px;
+
+}
+
+@keyframes beat{
+
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+
+}
