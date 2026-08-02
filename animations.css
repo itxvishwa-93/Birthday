@@ -1,0 +1,330 @@
+/* ==========================================
+   PAGE LOAD
+========================================== */
+
+body{
+
+    animation:fadePage 1.2s ease;
+
+}
+
+@keyframes fadePage{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   MAIN HEART
+========================================== */
+
+.main-heart{
+
+    animation:heartBeat 2s infinite ease-in-out;
+
+}
+
+@keyframes heartBeat{
+
+    0%,100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+    25%{
+
+        transform:translate(-50%,-50%) scale(1.04);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.09);
+
+    }
+
+    75%{
+
+        transform:translate(-50%,-50%) scale(1.03);
+
+    }
+
+}
+
+/* ==========================================
+   SMALL HEART BLINK
+========================================== */
+
+.heart{
+
+    animation:heartBlink 3.5s infinite;
+
+}
+
+@keyframes heartBlink{
+
+    0%,100%{
+
+        opacity:.55;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.15);
+
+    }
+
+}
+
+/* ==========================================
+   ORBIT HEARTS
+========================================== */
+
+.orbit-heart{
+
+    animation:ringHeartBlink 2.8s infinite;
+
+}
+
+@keyframes ringHeartBlink{
+
+    0%,100%{
+
+        opacity:.7;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.2);
+
+    }
+
+}
+/* ==========================================
+   STARS TWINKLE
+========================================== */
+
+#stars{
+
+    animation:starsTwinkle 6s ease-in-out infinite;
+
+}
+
+@keyframes starsTwinkle{
+
+    0%,100%{
+
+        opacity:.30;
+
+    }
+
+    25%{
+
+        opacity:.45;
+
+    }
+
+    50%{
+
+        opacity:.60;
+
+    }
+
+    75%{
+
+        opacity:.40;
+
+    }
+
+}
+
+/* ==========================================
+   SPARKLES
+========================================== */
+
+.sparkle{
+
+    position:absolute;
+
+    width:3px;
+
+    height:3px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    box-shadow:
+
+    0 0 6px white,
+
+    0 0 12px #ff7cc8,
+
+    0 0 20px #ff7cc8;
+
+    animation:sparkleBlink 2.5s infinite;
+
+}
+
+@keyframes sparkleBlink{
+
+    0%,100%{
+
+        opacity:.2;
+
+        transform:scale(.7);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.4);
+
+    }
+
+}
+
+/* ==========================================
+   TOUCH MESSAGE
+========================================== */
+
+#touch-message.show{
+
+    animation:popupMessage 3s ease forwards;
+
+}
+
+@keyframes popupMessage{
+
+    0%{
+
+        opacity:0;
+
+        transform:translate(-50%,50px);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+        transform:translate(-50%,0);
+
+    }
+
+    80%{
+
+        opacity:1;
+
+        transform:translate(-50%,-15px);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,-50px);
+
+    }
+
+}
+
+/* ==========================================
+   HEART GLOW
+========================================== */
+
+.main-heart{
+
+    filter:
+
+    drop-shadow(0 0 20px #ff4db2)
+
+    drop-shadow(0 0 40px #ff69c6)
+
+    drop-shadow(0 0 80px rgba(255,105,198,.5));
+
+}
+
+/* ==========================================
+   COUNTDOWN HOVER
+========================================== */
+
+.time-box{
+
+    transition:.35s ease;
+
+}
+
+.time-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 0 20px rgba(255,120,200,.35),
+
+    0 0 40px rgba(255,120,200,.20);
+
+}
+
+/* ==========================================
+   SMOOTH GLOW
+========================================== */
+
+.title{
+
+    animation:titleGlow 4s ease-in-out infinite;
+
+}
+
+@keyframes titleGlow{
+
+    0%,100%{
+
+        text-shadow:
+
+        0 0 8px #ff72c4,
+
+        0 0 18px #ff72c4,
+
+        0 0 28px #ff72c4;
+
+    }
+
+    50%{
+
+        text-shadow:
+
+        0 0 10px #ff8bd2,
+
+        0 0 22px #ff8bd2,
+
+        0 0 35px #ff8bd2;
+
+    }
+
+}

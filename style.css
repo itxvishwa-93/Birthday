@@ -1,0 +1,718 @@
+
+/* ==========================================
+   GOOGLE FONT RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #170826 0%,
+        #22103d 45%,
+        #2a1452 100%
+    );
+
+    overflow-x:hidden;
+
+    color:#fff;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+#background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-100;
+
+}
+
+/* ==========================================
+   STARS
+========================================== */
+
+#stars{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/* ==========================================
+   SPARKLES
+========================================== */
+
+#sparkles{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/* ==========================================
+   HOME
+========================================== */
+
+#home{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    width:100%;
+
+    max-width:1300px;
+
+    text-align:center;
+
+}
+
+/* ==========================================
+   TOP TEXT
+========================================== */
+
+.top-text{
+
+    font-size:32px;
+
+    color:#ffb9e5;
+
+    margin-bottom:20px;
+
+    font-weight:300;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.title{
+
+    font-family:'Cinzel',serif;
+
+    font-size:110px;
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+    color:white;
+
+    text-shadow:
+    0 0 6px #ff79c8,
+    0 0 18px #ff79c8,
+    0 0 30px #ff79c8;
+
+}
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.subtitle{
+
+    margin-top:18px;
+
+    color:#ffdff3;
+
+    font-size:32px;
+
+    font-weight:300;
+
+}
+
+/* ==========================================
+   HEART AREA
+========================================== */
+
+.heart-section{
+
+    position:relative;
+
+    width:500px;
+
+    height:500px;
+
+    margin:60px auto;
+
+}
+
+/* ==========================================
+   MAIN HEART
+========================================== */
+
+.main-heart{
+
+    position:absolute;
+
+    width:280px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:50;
+
+    filter:
+
+    drop-shadow(0 0 25px #ff4fb3)
+
+    drop-shadow(0 0 60px #ff5fc0);
+
+}
+
+/* ==========================================
+   RINGS
+========================================== */
+
+.ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border:1px solid rgba(255,170,220,.25);
+
+}
+
+.outer-ring{
+
+    width:400px;
+
+    height:400px;
+
+}
+
+.inner-ring{
+
+    width:290px;
+
+    height:290px;
+
+}
+
+/* ==========================================
+   ORBIT HEARTS
+========================================== */
+
+.orbit-heart{
+
+    position:absolute;
+
+    font-size:18px;
+
+    filter:
+
+    drop-shadow(0 0 8px hotpink);
+
+}
+
+.top{
+
+    top:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.bottom{
+
+    bottom:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.left{
+
+    left:-10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.right{
+
+    right:-10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+/* ==========================================
+   FLOATING HEARTS (FIXED)
+========================================== */
+
+.floating-hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
+.heart{
+
+    position:absolute;
+
+    font-size:14px;
+
+    opacity:.85;
+
+    filter:
+    drop-shadow(0 0 6px #ff69b4);
+
+}
+
+/* LEFT */
+
+.h1{top:8%;left:8%;}
+.h2{top:18%;left:14%;}
+.h3{top:30%;left:7%;}
+.h4{top:45%;left:15%;}
+.h5{top:62%;left:10%;}
+.h6{top:78%;left:16%;}
+.h7{top:90%;left:8%;}
+.h8{top:55%;left:24%;}
+
+/* RIGHT */
+
+.h9{top:10%;right:8%;}
+.h10{top:20%;right:16%;}
+.h11{top:36%;right:8%;}
+.h12{top:52%;right:14%;}
+.h13{top:66%;right:10%;}
+.h14{top:82%;right:18%;}
+.h15{top:92%;right:8%;}
+.h16{top:42%;right:24%;}
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin:25px auto 60px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-size:25px;
+
+    color:#ffffff;
+
+    font-weight:300;
+
+}
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:10px;
+
+}
+
+.time-box{
+
+    width:165px;
+
+    height:170px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.06);
+
+    border:2px solid rgba(255,170,220,.22);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+
+    0 0 25px rgba(255,90,180,.20);
+}
+
+.time-box span{
+
+    font-family:'Cinzel',serif;
+
+    font-size:58px;
+
+    color:#ffd2ec;
+
+    text-shadow:
+
+    0 0 12px hotpink;
+
+}
+
+.time-box small{
+
+    margin-top:12px;
+
+    color:#ffdff2;
+
+    font-size:20px;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================
+   TOUCH MESSAGE
+========================================== */
+
+#touch-message{
+
+    position:fixed;
+
+    left:50%;
+
+    top:170px;
+
+    transform:translateX(-50%);
+    
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,180,220,.25);
+
+    backdrop-filter:blur(14px);
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    color:white;
+
+    font-size:22px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+    min-width:420px;
+
+    text-align:center;
+
+   font-weight:500;
+
+  letter-spacing:.5px;
+
+  box-shadow:
+  0 0 25px rgba(255,100,190,.35);
+
+  border:1px solid rgba(255,180,230,.35);
+
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.title{
+
+font-size:65px;
+
+}
+
+.top-text{
+
+font-size:24px;
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+}
+
+.heart-section{
+
+width:350px;
+
+height:350px;
+
+}
+
+.main-heart{
+
+width:210px;
+
+}
+
+.outer-ring{
+
+width:300px;
+
+height:300px;
+
+}
+
+.inner-ring{
+
+width:220px;
+
+height:220px;
+
+}
+
+.message{
+
+font-size:18px;
+
+padding:0 15px;
+
+}
+
+.time-box{
+
+width:120px;
+
+height:135px;
+
+}
+
+.time-box span{
+
+font-size:40px;
+
+}
+
+.time-box small{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.title{
+
+font-size:48px;
+
+}
+
+.top-text{
+
+font-size:18px;
+
+}
+
+.subtitle{
+
+font-size:17px;
+
+}
+
+.heart-section{
+
+    width:400px;
+    height:400px;
+
+    margin:70px auto 70px;
+
+}
+
+.main-heart{
+
+width:170px;
+
+}
+
+.outer-ring{
+
+width:220px;
+
+height:220px;
+
+}
+
+.inner-ring{
+
+width:160px;
+
+height:160px;
+
+}
+
+}
+/* ===============================
+   TOP DIVIDER
+=============================== */
+
+.fancy-divider{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    margin:8px 0;
+
+}
+
+.fancy-divider .line{
+
+    width:120px;
+    height:1px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        #ff78c6,
+        transparent
+    );
+
+}
+
+.fancy-divider .heart{
+
+    color:#ff78c6;
+
+    font-size:15px;
+
+    text-shadow:
+        0 0 10px #ff4fa8,
+        0 0 20px #ff4fa8;
+
+}
+
+/* ===============================
+   MESSAGE DIVIDER
+=============================== */
+
+.quote-divider{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    margin:18px 0 35px;
+
+}
+
+.quote-divider .line{
+
+    width:120px;
+    height:1px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        #ff78c6,
+        transparent
+    );
+
+}
+
+.quote-divider .design{
+
+    color:#ff78c6;
+
+    font-size:18px;
+
+    text-shadow:0 0 8px #ff4fa8;
+
+}
+
+.quote-divider .heart{
+
+    color:#ff78c6;
+
+    font-size:22px;
+
+    text-shadow:
+        0 0 10px #ff4fa8,
+        0 0 20px #ff4fa8;
+
+}
