@@ -262,3 +262,20 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+const intro=document.getElementById("intro");
+const envelope=document.getElementById("envelope");
+const music=document.getElementById("bgMusic");
+
+envelope.addEventListener("click",()=>{
+
+    music.play();
+
+    intro.style.opacity="0";
+
+    setTimeout(()=>{
+
+        intro.style.display="none";
+
+    },1000);
+
+});
